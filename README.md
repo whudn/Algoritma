@@ -1,5 +1,5 @@
-#+ Basic C++
- |-Pencabangan
- |-Pengulangan
- |-Array
- |-Structure
+# Basic C++
+ |Pencabangan
+ |Pengulangan
+ |Array
+ |Structure
