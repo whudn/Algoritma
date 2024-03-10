@@ -1,35 +1,40 @@
-//Bilangan terbesar
+// Program to find the largest number
 #include <stdio.h>
-#include <conio.h>
 
-main()
-
+int main()
 {
-	
-	int Maks, Bil;
-	
-	printf("Masukan Bilangan Pertama: ");
-	scanf("%d", &Bil);
-	
-	Maks = Bil;
-	
-	printf("Masukan Bilangan Kedua: ");
-	scanf("%d", &Bil);
-	if(Maks < Bil)
-	
-	
-	Maks = Bil;
-	
-	else
-	
-	printf("Masukan Bilangan ketiga: ");
-	scanf("%d", &Bil);
-	if(Maks < Bil)
-	
-	Maks = Bil;
-	
-	printf("Bilangan terbesarnya adalah: %d\n ", Maks);
+    // Declare variables
+    int num, max_num = INT_MIN;
 
-	
-	getch();
+    // Prompt user to enter first number
+    printf("Enter the first number: ");
+    scanf("%d", &num);
+
+    // Update max_num if num is greater
+    if (num > max_num) {
+        max_num = num;
+    }
+
+    // Prompt user to enter second number
+    printf("Enter the second number: ");
+    scanf("%d", &num);
+
+    // Update max_num if num is greater
+    if (num > max_num) {
+        max_num = num;
+    }
+
+    // Prompt user to enter third number
+    printf("Enter the third number: ");
+    scanf("%d", &num);
+
+    // Update max_num if num is greater
+    if (num > max_num) {
+        max_num = num;
+    }
+
+    // Print the largest number
+    printf("The largest number is: %d\n", max_num);
+
+    return 0;
 }
