@@ -1,19 +1,23 @@
-//Mencari Luas Segitiga
-#include <stdio.h>
-#include <conio.h>
+// Program to calculate the area of a triangle
 
-main()
-{
-		int a,t,l;
-		printf("masukan alas:");
-		scanf("%d",&a);
-		printf("masukan tinggi:");
-		scanf("%d",&t);
-		
-		l=a*t/2;
-		
-		printf("luas seigitiganya adalah : %d",l);
-		
-		getch();
-		
+#include <stdio.h>
+
+int main() {
+    int base, height, area;
+
+    // Prompt user to enter the base of the triangle
+    printf("Enter the base of the triangle: ");
+    scanf("%d", &base);
+
+    // Prompt user to enter the height of the triangle
+    printf("Enter the height of the triangle: ");
+    scanf("%d", &height);
+
+    // Calculate the area of the triangle
+    area = base * height / 2;
+
+    // Display the area of the triangle
+    printf("The area of the triangle is: %d\n", area);
+
+    return 0;
 }
