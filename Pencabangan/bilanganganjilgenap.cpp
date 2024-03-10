@@ -1,21 +1,19 @@
-// TUGAS Bilangan GANJIL GENAP
+// Program to check if a number is odd or even
+
 #include <stdio.h>
-#include <conio.h>
 
-main()
+int main() {
+    int number;
 
-{
-	
-	int bil;
-	
-	printf("Masukan Bilangan: ");
-	scanf("%d", &bil);
-	
-	printf("Bilangan yang anda masukan tersebut adalah: ");
-	if(bil %2==0)
-	printf("Bilangan Genap");
-	else
-	printf("Bilangan Ganjil");
-	
-	getch();
+    printf("Enter a number: ");
+    scanf("%d", &number);
+
+    if (number % 2 == 0) {
+        printf("The number is even.\n");
+    } else {
+        printf("The number is odd.\n");
+    }
+
+    return 0;
 }
+
