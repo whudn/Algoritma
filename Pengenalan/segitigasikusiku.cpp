@@ -1,25 +1,21 @@
-//Luas dan Panjang sisi Miring Segitiga Siku-Siku
+// Luas dan Panjang Sisi Miring Segitiga Siku-Siku
 #include <stdio.h>
-#include <conio.h>
 #include <math.h>
 
-int main()
-{
-		float B,C,L,A;
-		
-		printf("Masukan Nilai Siku-Siku 1: ");
-		scanf("%f",&A);
-		
-		printf("Masukan Nilai Siku-Siku 2: ");
-		scanf("%f",&B);
-		
-		L=A*B*0.5;
-		C=sqrt(pow(A,2)+pow(B,2));
-		
-		
-		printf("Hasil luas adalah: %f\n",L);
-		printf("Hasil Panjang Sisi Miring adalah: %f\n",C);
-		
-		getch();
-		
+int main() {
+    float side1, side2, area, hypotenuse;
+
+    printf("Masukan Nilai Sisi 1: ");
+    scanf("%f", &side1);
+
+    printf("Masukan Nilai Sisi 2: ");
+    scanf("%f", &side2);
+
+    area = 0.5 * side1 * side2;
+    hypotenuse = sqrt(pow(side1, 2) + pow(side2, 2));
+
+    printf("Hasil luas adalah: %.2f\n", area);
+    printf("Hasil panjang sisi miring adalah: %.2f\n", hypotenuse);
+
+    return 0;
 }
