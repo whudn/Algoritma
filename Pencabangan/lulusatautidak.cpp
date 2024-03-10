@@ -1,20 +1,20 @@
-//LULUS ATAU TIDAK
+// DETERMINE WHETHER A STUDENT PASSES OR FAILS
 #include <stdio.h>
-#include <conio.h>
+#include <stdlib.h>
 
-main()
-
+int main()
 {
-	
-	int nilai;
-	
-	printf("Isi Nilai Mahasiswa: ");
-	scanf("%d", &nilai);
-	
-	if(nilai>=60)
-	printf("Lulus");
-	else
-	printf("tidak Lulus");
-	
-	getch();
+    int studentGrade;
+
+    printf("Enter the student's grade: ");
+    scanf("%d", &studentGrade);
+
+    if (studentGrade >= 60) {
+        puts("Passed");
+    } else {
+        puts("Failed");
+    }
+
+    getch();
+    return 0;
 }
